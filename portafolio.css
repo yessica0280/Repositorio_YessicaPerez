@@ -207,12 +207,12 @@ p {
     padding: 20px;  
     height: 100vh; 
     display: flex;
+    flex-direction: column;
     justify-content: center; 
     align-items: center; 
 }
 
 #h {
-    margin-left: -40vw;
 }
 #dos {
     font-family: 'Roboto', sans-serif;
@@ -223,22 +223,16 @@ p {
     color: #3F51B5; 
     margin-bottom: 2vw;  
     text-transform: uppercase;
-    margin-top: -15vw; 
-    margin-left: 60vw;
+
 }
 
 .container3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+
     gap: 2rem; 
     justify-items: center; 
-    padding: 20px;
-    margin-left: -30vw;
-    margin-top: 7vw;
 }
 
 .card, .card1, .card2 {
-    width: 18rem; 
     background-color: #fff; 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
     border-radius: 10px;
@@ -574,22 +568,18 @@ button:hover {
     /* Página 3 */
     #inicio3 {
         height: auto;
+        padding-top: 15vw;
     }
     .container3 {
-        margin-left: -20vw;
         display: flex;
         flex-direction: column; 
         align-items: center; 
-        gap: 20px; 
     }
 
     .card, .card1, .card2 {
-        width: 18rem; 
-        background-color: #fff;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
         padding: 20px;
-        margin: 10px 0; 
         transition: transform 0.3s ease;
     }
 
@@ -598,8 +588,6 @@ button:hover {
     }
 
     #dos {
-        margin-top: -100vh;
-        margin-left: 25vw;
     }
     
     /* Página 4 */
