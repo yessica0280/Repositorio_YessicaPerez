@@ -16,6 +16,7 @@ body {
     --deg-uno:#E1BEE7;
     --deg-dos:#81D4FA;
     --letra-uno: #3F51B5;
+    --soy-uno:#3F51B5;
 }
 
 .sol1 {
@@ -64,7 +65,7 @@ body {
 #barra nav a {
     display: flex;
     align-items: center; 
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 1vw 2vw;
     font-size: 1.8vw;
@@ -92,7 +93,7 @@ body {
 
 #barra a:hover {
     transform: translateY(-5px); 
-    color: #3F51B5; 
+    color: white; 
 }
 
 #barra a:focus {
@@ -168,6 +169,7 @@ body {
 }
 
 /*Inicio de la página 2.*/
+
 #inicio2 {
     background-color: var(--fondo-color1);  
     padding: 20px;  
@@ -189,41 +191,41 @@ body {
 }
 
 .container2 {
-    margin-top: 4vw;
     border-radius: 2vw;
     margin-left: -35vw;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 
-p {
+#soy {
+    width: 40vw;
     font-family: 'Roboto', sans-serif;
     font-size: 1.3vw;
-    text-align: center;
+    text-align: justify;
     color: black; 
     line-height: 1.6; 
+    margin-left: 10vw;
 }
 
 #foto {
     width: 25vw;  
     height: 25vw; 
     overflow: hidden; 
-    border-radius: 10px; 
+    border-radius: 50%; 
     margin-top: -24vw;
-    margin-left: 65vw;
+    margin-left: 58vw;
     object-fit: cover;
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
-    filter: drop-shadow(30px 15px 5px #a29ba3);
 }
 
 #foto:hover {
     transform: scale(1.1);  
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); 
 }
 
 /*Inicio de la página 3*/
 #inicio3 {
-    background-color: #9acef4;  
+    background-color: var(--fondo-color1);  
     padding: 20px;  
     height: 100vh; 
     display: flex;
@@ -241,7 +243,7 @@ p {
     font-size: 3vw;
     text-align: center;
     width: 55vw;
-    color: #3F51B5; 
+    color: black; 
     margin-bottom: 2vw;  
     text-transform: uppercase;
 
@@ -303,7 +305,7 @@ p {
 
 /*Inicio de página 4.*/
 #inicio4 {
-    background-color: #9acef4;  
+    background-color: var(--fondo-color1);  
     padding: 20px;  
     height: 100vh; 
     display: flex;
@@ -316,7 +318,7 @@ p {
     font-weight: bold;
     font-size: 3vw;
     text-align: center;
-    color: #3F51B5; 
+    color: black; 
     margin-bottom: 2vw;  
     text-transform: uppercase;
     margin-top: 5vw;
@@ -332,32 +334,39 @@ p {
 
 #Ima {
     margin-left: 4vw;
+    background-color: #62b2eb;
 }
 
 #ima1 {
     margin-left: 6vw;
+    background-color: #62b2eb;
 }
 
 #ima2 {
     margin-left: 6vw;
+    background-color: #62b2eb;
 }
 
 #ima3 {
     margin-left: 6vw;
+    background-color: #62b2eb;
 }
 
 #ima4 {
     margin-left: 6vw;
+    background-color: #62b2eb;
 }
 
 #ima5 {
     margin-left: 12vw;
     margin-top: 5vw;
+    background-color: #62b2eb;
 }
 
 #ima6 {
     margin-left: 7vw;
     margin-top: 5vw;
+    background-color: #62b2eb;
 }
 
 #ima7 {
@@ -377,7 +386,7 @@ p {
 
 /*Inicio de la página 5*/
 #inicio5 {
-    background-color: #9acef4;  
+    background-color: var(--fondo-color1);  
     padding: 20px;  
     height: 100vh; 
     display: flex;
