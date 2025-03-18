@@ -7,6 +7,7 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    background: linear-gradient(to bottom right, var(--deg-uno), #81D4FA); 
 }
 
 /*Inicio de la primera página.*/
@@ -109,7 +110,7 @@ body {
 
 
 #inicio {
-    background: linear-gradient(to bottom right, var(--deg-uno), #81D4FA); 
+    
     color: #333;
     text-align: center;
     padding: 6rem 0;
@@ -174,7 +175,6 @@ body {
 /*Inicio de la página 2.*/
 
 #inicio2 {
-    background-color: var(--fondo-color1);  
     padding: 20px;  
     height: 100vh; 
     display: flex;
@@ -228,7 +228,6 @@ body {
 
 /*página habilidades*/
 #inicio6 {
-    background-color: var(--fondo-color1);  
     padding: 20px;  
     height: 100vh; 
     display: flex;
@@ -369,7 +368,6 @@ body {
 
 /*Inicio de la página 3*/
 #inicio3 {
-    background-color: var(--fondo-color1);  
     padding: 20px;  
     height: 100vh; 
     display: flex;
@@ -449,12 +447,12 @@ body {
 
 /*Inicio de página 4.*/
 #inicio4 {
-    background-color: var(--fondo-color1);  
     padding: 20px;  
     height: 100vh; 
     display: flex;
     justify-content: center; 
     align-items: center;
+    flex-direction: column;
 }
 
 #tec {
@@ -467,46 +465,23 @@ body {
     text-transform: uppercase;
     margin-top: 2vw;
 }
+.container4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(1rem,2vw,3rem);
+    width: 60vw;
+    justify-content: center;
+}
 
-#Ima, #ima1, #ima2, #ima3, #ima4, #ima5, #ima6, #ima7, #ima8 {
-    width: 12vw;                   
-    height: 12vw;
+#Ima, #ima1, #ima2, #ima3, #ima4, #ima5, #ima6 {
+    width: clamp(5rem,20vw,15rem);                   
+    height: clamp(5rem,20vw,15rem);
     transition: transform 0.3s ease, box-shadow 0.3s ease; 
     border-radius: 8px; 
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);  
-    margin-top: 3vw;
 }
 
-#Ima {
-    margin-left: 4vw;
-}
 
-#ima1 {
-    margin-left: 6vw;
-    
-}
-
-#ima2 {
-    margin-left: 6vw;
-}
-
-#ima3 {
-    margin-left: 6vw;
-}
-
-#ima4 {
-    margin-left: 6vw;
-}
-
-#ima5 {
-    margin-left: 12vw;
-    margin-top: 5vw;
-}
-
-#ima6 {
-    margin-left: 7vw;
-    margin-top: 5vw;
-}
 
 #Ima:hover, #ima1:hover, #ima2:hover, #ima3:hover, #ima4:hover, #ima5:hover, #ima6:hover {
     transform: translateY(-5px);   
@@ -514,8 +489,7 @@ body {
 }
 
 /*Inicio de la página 5*/
-#inicio5 {
-    background-color: var(--fondo-color1);  
+#inicio5 { 
     padding: 20px;  
     height: 100vh; 
     display: flex;
@@ -673,13 +647,13 @@ button:hover {
         height: auto;
         padding: 10vw 5vw;
     }
-
+    
     #imagen {
         margin-top: -8vw;
         width: 55vw;
         height: 55vw;
     }
-
+    
     #inicio h1 {
         width: 0;
         overflow: hidden;
@@ -688,12 +662,12 @@ button:hover {
         font-size: 8vw;
         animation: escribir 2s steps(50) forwards, parpadeo 1s infinite step-end;
     }
-
+    
     #inicio p {
         margin-top: 25vw;
         font-size: 1.5rem;
     }
-
+    
     @keyframes escribir {
         100% {
             width: 92%; 
@@ -708,22 +682,22 @@ button:hover {
             border-color: transparent; 
         }
     }
-
+    
     /* Página 2 */
     .container2 {
         margin-top: -10vw;
         width: 90vw;
         height: auto;
     }
-
+    
     .container2 p {
         font-size: 4vw;
     }
-
+    
     #uno {
         font-size: 5vw;
     }
-
+    
     /* Página 3 */
     #inicio3 {
         height: auto;
@@ -734,84 +708,32 @@ button:hover {
         flex-direction: column; 
         align-items: center; 
     }
-
+    
     .card, .card1, .card2 {
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
         border-radius: 10px;
         padding: 20px;
         transition: transform 0.3s ease;
     }
-
+    
     .card:hover, .card1:hover, .card2:hover {
         transform: translateY(-5px);
     }
-
+    
     #dos {
     }
     
     /* Página 4 */
-
+    
     #inicio4 {
         height: auto;
     }
     #tec {
         font-size: 5vw;
-    margin-top: 15vw;
+        margin-top: 15vw;
     }
-
-    #Ima {
-        width: 30vw;
-        height: 30vw;
-        margin-left: 8vw;
-    }
-
-    #ima1 {
-        width: 30vw;
-        height: 30vw;
-        margin-left: 12vw;
-    }
-
-    #ima2 {
-        width: 30vw;
-        height: 30vw;
-        margin-left: 8vw;
-    }
-    #ima3 {
-        width: 30vw;
-        height: 30vw;
-        margin-left: 12vw;
-    }
-
-    #ima4 {
-        width: 30vw;
-        height: 30vw;
-        margin-left: 8vw;
-    }
-
-    #ima5 {
-        width: 30vw;
-        height: 30vw;
-        margin-left: 12vw;
-    }
-
-    #ima6 {
-        width: 30vw;
-        height: 30vw;
-        margin-left: 8vw;
-    }
-
-    #ima7 {
-        width: 30vw;
-        height: 30vw;
-        margin-left: 12vw;
-    }
-
-    #ima8 {
-        width: 30vw;
-        height: 30vw;
-        margin-left: 30vw;
-    }
-
+  
+   
     /* Página 5 */
 
     #inicio5 {
@@ -991,64 +913,7 @@ button:hover {
         margin-top: 7vw;
     }
 
-    #ima1 {
-        width: 22vw;
-        height: 22vw;
-        margin-left: 22vw;
-        margin-top: 7vw;
-    }
-
-    #ima2 {
-        width: 22vw;
-        height: 22vw;
-        margin-left: 15vw;
-        margin-top: 7vw;
-    }
-
-    #ima3 {
-        width: 22vw;
-        height: 22vw;
-        margin-left: 22vw;
-        margin-top: 7vw;
-        
-    }
-
-    #ima4 {
-        width: 22vw;
-        height: 22vw;
-        margin-left: 15vw;
-        margin-top: 7vw;
-    }
-
-    #ima5 {
-        width: 22vw;
-        height: 22vw;
-        margin-left: 22vw;
-        margin-top: 7vw;
-    }
-
-    #ima6 {
-        width: 22vw;
-        height: 22vw;
-        margin-left: 15vw;
-        margin-top: 7vw;
-
-    }
-
-    #ima7 {
-        width: 22vw;
-        height: 22vw;
-        margin-left: 22vw;
-        margin-top: 7vw;
-    }
-
-    #ima8 {
-        width: 22vw;
-        height: 22vw;
-        margin-left: 38vw;
-        margin-top: 7vw;
-    }
-
+    
     /* Página 5 */
 
     #con {
@@ -1166,10 +1031,7 @@ button:hover {
     }
 
     /* Página 4 */
-    #Ima, #ima1, #ima2, #ima3, #ima4 {
-        width: 12vw;
-        height: 12vw;
-    }
+
 
     /* Página 5 */
     form {
