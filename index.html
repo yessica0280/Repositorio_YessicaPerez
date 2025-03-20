@@ -116,22 +116,24 @@
     <section id="inicio5">
         <div class="container5">
             <h2 id="con1">Contacto</h2>
-            <form id="form">
-                <label for="nombre"> Nombre: </label>
-                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
-
-                <label for="correo"> Correo electrónico: </label>
-                <input type="email" id="correo" name="correo" required placeholder="Tu correo">
-
-                <label for="asunto"> Asunto: </label>
-                <input type="text" id="asunto" name="asunto" required placeholder="El asunto">
-
-                <label for="mensaje"> Mensaje: </label>
-                <input type="text" id="mensaje" name="mensaje" required placeholder="Mensaje"><br>
-
-                <button type="submit" id="enviar"> Enviar </button>
-            </form>
-            <div id="respuesta"></div>
+            <form name="contact" id="form" netlify>
+                <p>
+                  <label id="nombre">Nombre</label>
+                  <input type="text" name="name" placeholder="Nombre" id="nombre1"/>
+                </p>
+                <p>
+                  <label id="email">Email </label>
+                  <input type="email" name="email" placeholder="Email" id="email1"/>
+                </p>
+                <p>
+                    <label id="mensaje">Mensaje: </textarea></label>
+                    <textarea name="message" placeholder="Ingresa el mensaje" id="mensaje1"></textarea>
+                  </p>
+                  <p>
+                <p>
+                  <button type="submit" id="enviar">Enviar</button>
+                </p>
+              </form>
         </div>
     </section>
 
